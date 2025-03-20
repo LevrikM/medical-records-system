@@ -1,10 +1,12 @@
-import PatientInfo from './PatientInfo';
+"use client";
 
 const PatientCard = ({ name, age, diagnosis, status }) => {
   return (
     <div className="patient-card">
-      <h2>Пацієнт: {name}</h2>
-      <PatientInfo age={age} diagnosis={diagnosis} status={status} />
+      <h2>{name}</h2>
+      <p>Вік: {age}</p>
+      {diagnosis ? <p>Діагноз: {diagnosis}</p> : null}
+      <p>Статус: {status}</p>
     </div>
   );
 };
