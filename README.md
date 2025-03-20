@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Medical Records System
 
-## Getting Started
+> Система для ведення медичних карток пацієнтів, розроблена на базі [Next.js](https://nextjs.org).
 
-First, run the development server:
+## Опис проекту
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ця система дозволяє реєструвати пацієнтів, додавати їх медичні дані та оновлювати статус пацієнта, зберігаючи інформацію про останній візит. Вона розроблена з метою полегшення процесу ведення медичних карток, забезпечуючи легкий доступ до важливої інформації.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Особливості
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Реєстрація пацієнтів**: Можливість додавати нових пацієнтів у систему.
+- **Медичні дані**: Зберігання важливої медичної інформації пацієнтів.
+- **Оновлення статусу пацієнта**: Легке оновлення статусу стану здоров'я пацієнта.
+- **Інтерфейс користувача**: Проста та зрозуміла навігація для користувачів.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Виконавець
 
-## Learn More
+Проект розробив **Краснобокий М.В**, студент групи **ІПЗ-21-4**.
 
-To learn more about Next.js, take a look at the following resources:
+## Технології
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Цей проект побудований з використанням таких технологій:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) — для створення серверної частини та рендерингу.
+- [ESLint](https://eslint.org) — для перевірки якості коду.
+- [Prettier](https://prettier.io) — для автоматичного форматування коду.
