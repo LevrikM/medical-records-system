@@ -2,26 +2,31 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="home-page">
       <section className="page-content">
-        <h2>Головна</h2>
-        <p>Ласкаво просимо на нашу платформу для зберігання та управління медичними картками.</p>
-        <div className="card">
-          <h3>Що ми пропонуємо?</h3>
-          <p>Ми надаємо зручний інтерфейс для ведення медичних записів пацієнтів.</p>
+        <h2 className="main-title">Ласкаво просимо на платформу</h2>
+        <p className="intro-text">Платформа для зберігання та управління медичними картками пацієнтів.</p>
+
+        <div className="card-container">
+          <div className="card">
+            <h3>Що ми пропонуємо?</h3>
+            <p>Ми надаємо зручний інтерфейс для ведення медичних записів пацієнтів, їх історії хвороб та лікарських рекомендацій.</p>
+          </div>
+          <div className="card">
+            <h3>Інтуїтивно зрозуміло</h3>
+            <p>Інтерфейс нашої системи простий та інтуїтивно зрозумілий для користувачів будь-якого рівня технічної підготовки.</p>
+          </div>
         </div>
-        
-        <Link href="/patient-info">
-          <button>Переглянути інформацію про пацієнта</button>
-        </Link>
 
-        <Link href="/virtual-list">
-          <button>Віртуальний список пацієнтів</button>
-        </Link>
+        <div className="cta-container">
+          <Link href="/virtual-list">
+            <button className="cta-btn">Переглянути пацієнтів</button>
+          </Link>
 
-        <Link href="/lazy-patient">
-          <button>Ліниве завантаження</button>
-        </Link>
+          {/* <Link href="/lazy-patient">
+            <button className="cta-btn">Ліниве завантаження</button>
+          </Link> */}
+        </div>
       </section>
     </div>
   );

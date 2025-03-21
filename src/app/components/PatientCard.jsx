@@ -1,12 +1,18 @@
 "use client";
 
-const PatientCard = ({ name, age, diagnosis, status }) => {
+import { useRouter } from "next/navigation"; // router
+
+const PatientCard = ({ id, name, age, diagnosis, status, onUpdateStatus }) => {
+  const router = useRouter();
+
+  const handlePatientClick = () => {
+    router.push(`/patient-info/${id}`); 
+  };
+
   return (
     <div className="patient-card">
       <h2>{name}</h2>
-      <p>Вік: {age}</p>
-      {diagnosis ? <p>Діагноз: {diagnosis}</p> : null}
-      <p>Статус: {status}</p>
+      <button onClick={handlePatientClick}>Переглянути інформацію</button>
     </div>
   );
 };
