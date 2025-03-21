@@ -4,11 +4,10 @@ import Link from 'next/link';
 const Footer = () => {
   return (
       <footer className="footer">
-        <p>&copy; 2025 Медичні картки. Всі права захищені.</p>
         <div className="footer-links">
-          <Link href="/privacy">Політика конфіденційності</Link>
-          <Link href="/terms">Умови використання</Link>
+          <Link href="https://levrikm.github.io/"><strong>My GitHub Portfolio</strong></Link>
         </div>
+        <p>&copy; 2025 Medical Records System</p>
       </footer>
     );
   }

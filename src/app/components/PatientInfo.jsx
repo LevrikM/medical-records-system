@@ -95,7 +95,7 @@ const styles = {
   card: {
     padding: "20px",
     maxWidth: "280px",
-    margin: "10px",
+    margin: "10px auto",
     backgroundColor: "white",
     borderRadius: "8px",
     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",

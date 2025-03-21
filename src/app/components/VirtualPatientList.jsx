@@ -57,7 +57,7 @@ const VirtualPatientList = ({ patients, onUpdateStatus, gridRef }) => {
               ...style,
               marginBottom: GAP, 
               marginRight: columnIndex === COLUMN_COUNT - 1 ? 0 : GAP,
-              boxSizing: "border-box", 
+              boxSizing: "border-box",
             }}
           >
             Пацієнт: 

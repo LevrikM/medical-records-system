@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <div className="home-page">
@@ -19,9 +17,9 @@ export default function Home() {
         </div>
 
         <div className="cta-container">
-          <Link href="/virtual-list">
+          {/* <Link href="/virtual-list">
             <button className="cta-btn">Переглянути пацієнтів</button>
-          </Link>
+          </Link> */}
 
           {/* <Link href="/lazy-patient">
             <button className="cta-btn">Ліниве завантаження</button>
